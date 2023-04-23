@@ -1,0 +1,17 @@
+.podcast:hover{
+box-shadow: 0 0 5px grey;
+    cursor: pointer;
+scale: 1.03;
+}
+.podcast{
+    scale: 1;
+    transition: 0.2s ease-out;
+}
+.podcast p{
+    max-width: 100%;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+}
