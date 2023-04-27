@@ -40,7 +40,7 @@ x.push(id)
 }
 
   React.useEffect(() => {
-    axios.get('http://localhost:5000/podcasts')
+    axios.get('https://spotifybackend.onrender.com/podcasts')
       .then(response => {
         setData(response.data.data);
       })

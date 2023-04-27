@@ -49,7 +49,7 @@ x.push(id)
     localStorage.setItem("resume",JSON.stringify(x))
   };
     const handleReady = () => {
-      axios.post("http://localhost:5000/addwatchtime",{
+      axios.post("https://spotifybackend.onrender.com/addwatchtime",{
         id:item["_id"]
       })
       if(item['currentTime'])

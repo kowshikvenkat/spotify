@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDF_MqVe6kF-HcyuOAOcGNz-kjS24tcz0A",
-  authDomain: "shopify-84a1f.firebaseapp.com",
-  projectId: "shopify-84a1f",
-  storageBucket: "shopify-84a1f.appspot.com",
-  messagingSenderId: "876129511314",
-  appId: "1:876129511314:web:610ec5ceef3e821a27834b"
+  apiKey: "AIzaSyAcnCJh4KOm8Z9Qj1s0TOf86LaG7XxBNXw",
+  authDomain: "buyzee-fa223.firebaseapp.com",
+  projectId: "buyzee-fa223",
+  storageBucket: "buyzee-fa223.appspot.com",
+  messagingSenderId: "699319607924",
+  appId: "1:699319607924:web:1d7f86870bd295bfdd6721"
 };
 
 // Initialize Firebase

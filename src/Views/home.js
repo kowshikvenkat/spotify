@@ -25,7 +25,7 @@ if(localStorage.getItem("favourites")!=null&&localStorage.getItem("favourites")!
          },[])
 
   React.useEffect(() => {
-    axios.get('http://localhost:5000/podcasts')
+    axios.get('https://spotifybackend.onrender.com/podcasts')
       .then(response => {
         setData(response.data.data);
       })

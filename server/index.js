@@ -1,10 +1,13 @@
+require("dotenv").config()
 const express = require("express"),
   app = express(),
-  port = process.env.PORT || 5000,
+  port = 5000,
   cors = require("cors");
+  const path = require("path")
 const mongoose = require("mongoose")
 
-  
+
+
 mongoose.set('strictQuery',false)
 const database = module.exports =()=>{
   const connectionParams = {
@@ -58,3 +61,8 @@ app.post("/addwatchtime",(req,res)=>{
   console.log("watchtime working")
   RegisterUser.findOneAndUpdate({_id:req.body.id},{ $inc: { watchtime: 1 } }).then((res)=>console.log("watchtime increased"))
 })
+express.static(path.join(__dirname,'../build'))
+app.use(express.static(path.join(__dirname,'../build')))
+app.get("*",(req,res)=>{
+  res.sendFile(path.resolve(path.join(__dirname,'../build/index.html')))
+})  

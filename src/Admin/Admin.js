@@ -30,7 +30,7 @@ axios.post("https://api.cloudinary.com/v1_1/ds27l3mqz/auto/upload",videoformdata
 }).then((res)=>{if(res){
   console.log("uploaded successfully")
   filedata  = res.data.secure_url
-  axios.post("http://localhost:5000/newpodcast",{
+  axios.post("https://spotifybackend.onrender.com/newpodcast",{
     name:name,
     desc:desc,
     category:category,
